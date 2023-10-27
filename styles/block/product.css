@@ -1,0 +1,126 @@
+.product {
+  box-sizing: border-box;
+  padding: 0 15px 0 15px;
+  min-width: 375px;
+}
+.product__title {
+  font-family: "Graphik LCG Bold ";
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: -0.005em;
+  text-align: left;
+  color: #051534;
+  margin-bottom: 15px;
+}
+.product__description {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #051534;
+  margin-bottom: 15px;
+}
+.product__about {
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #051534;
+  margin-bottom: 20px;
+}
+.product__card--image {
+  margin-bottom: 100px;
+}
+
+@media (min-width: 600px) {
+  .product {
+    min-width: 768px;
+    padding-left: 30px;
+  }
+  .product__title {
+    font-size: 45px;
+    line-height: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .product__title--br {
+    display: none;
+  }
+  .br {
+    display: block;
+  }
+  .product__description {
+    font-size: 22px;
+    line-height: 33px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .product__about {
+    font-size: 22px;
+    line-height: 33px;
+    text-align: center;
+  }
+  .product__picture {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 150px;
+  }
+  .product__card--image {
+    margin-bottom: 0px;
+  }
+  .product__video {
+    width: 708px;
+    height: 539px;
+  }
+  .product__picture--last {
+    margin-bottom: 200px;
+  }
+}
+@media (min-width: 990px) {
+  .product {
+    min-width: 1920px;
+  }
+  .product__card {
+    display: flex;
+    justify-content: center;
+  }
+  .product__card--uniq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .product__card--text {
+    margin-right: 82px;
+  }
+  .product__title,
+  .product__description,
+  .product__about {
+    text-align: left;
+    width: 500px;
+  }
+  .product__title--uniq,
+  .product__description--uniq {
+    text-align: center;
+    width: 946px;
+  }
+  .product__description--uniq {
+    margin-bottom: 60px;
+  }
+  .product__video {
+    width: 1140px;
+    height: 760px;
+  }
+  .product__card--flex {
+    order: -1;
+    margin-right: 82px;
+  }
+  .product__picture {
+    margin-bottom: 200px;
+  }
+  .product__picture--last {
+    margin-bottom: 250px;
+  }
+}

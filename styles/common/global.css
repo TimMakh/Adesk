@@ -1,0 +1,51 @@
+html {
+  font-family: Graphik LCG;
+  overflow-x: hidden;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+@media (min-width: 600px) {
+  body {
+    min-width: 768px;
+  }
+}
+@media (min-width: 990px) {
+  body {
+    min-width: 1920px;
+  }
+}
+li {
+  list-style-type: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+@font-face {
+  font-family: "Graphik LCG";
+  src: url(../../assets/fonts/GraphikLCG-Regular.ttf);
+}
+@font-face {
+  font-family: "Graphik LCG Bold";
+  src: url(../../assets/fonts/GraphikLCG-Bold.ttf);
+}
+@font-face {
+  font-family: "Graphik LCG Super";
+  src: url(../../assets/fonts/GraphikLCGSuper.ttf);
+}

@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adesk</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" onclick="return false" class="header__logo">
+        <img
+          class="header__logo--image"
+          src="./assets/header-logo.svg"
+          alt="Adesk logo."
+          width="104px"
+          height="24px" />
+      </a>
+      <nav class="header__nav">
+        <ul class="header__item-list">
+          <li class="header__item">
+            <a class="header__link" href="#" onclick="return false"
+              >Возможности</a
+            >
+          </li>
+          <li class="header__item">
+            <a href="#" onclick="return false" class="header__link">Решения</a>
+          </li>
+          <li class="header__item">
+            <a href="#" onclick="return false" class="header__link">Ресурсы</a>
+          </li>
+          <li class="header__item">
+            <a href="#" onclick="return false" class="header__link">Блог</a>
+          </li>
+          <li class="header__item">
+            <a href="#" onclick="return false" class="header__link">Отзывы</a>
+          </li>
+          <li class="header__item">
+            <a href="#" onclick="return false" class="header__link">Цены</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="header__btn-list">
+        <li class="header__btn-item">
+          <button class="header__btn header__btn--demo" type="button">
+            Записаться на демо
+          </button>
+        </li>
+        <li class="header__btn-item">
+          <button class="header__btn header__btn--log" type="button">
+            Войти
+          </button>
+        </li>
+        <li class="header__btn-item">
+          <button class="header__btn header__btn--sign" type="button">
+            Зарегистрироваться
+          </button>
+        </li>
+      </ul>
+      <button class="header__btn header__btn--menu" type="button">
+        <span class="header__span--menu"></span>
+      </button>
+    </header>
+    <main class="main">
+      <section class="intro">
+        <h1 class="intro__title">Баланс</h1>
+        <p class="intro__description">
+          Для руководителя, который хочет эффективно распоряжаться ресурсами
+          компании и извлекать из них максимум прибыли.
+        </p>
+        <button class="intro__btn" type="button">
+          Протестировать бесплатно
+        </button>
+        <picture class="intro__picture">
+          <source
+            media="(min-width: 990px)"
+            srcset="./assets/intro-image-desktop.png 1x"
+            with="1000px"
+            height="661px"
+            type="image/png" />
+          <source
+            media="(min-width: 600px)"
+            with="700px"
+            height="468px"
+            srcset="./assets/intro-image-tablet.png 1x"
+            type="image/png" />
+          <img
+            class="intro__image"
+            srcset="./assets/intro-image-mobile.png 1x"
+            width="345px"
+            height="377px"
+            alt="Financial table." />
+        </picture>
+        <div class="intro__about">
+          <picture class="intro__about--picture">
+            <source
+              media="(min-width: 600px)"
+              with="200px"
+              height="200px"
+              srcset="./assets/about-intro.png 1x"
+              type="image/png" />
+            <img
+              class="intro__about--image"
+              srcset="./assets/intro-about-mobile.png 1x"
+              width="150px"
+              height="163px"
+              alt="Decorative photo." />
+          </picture>
+          <p class="intro__about--description">
+            Баланс —
+            <b class="intro__about--description-bold"
+              >главный отчет собственника.</b
+            >
+            Он поможет вам понять, где кроется прибыль, какими активами обладает
+            бизнес и насколько эффективно они используются.
+          </p>
+        </div>
+      </section>
+      <section class="product">
+        <ul class="product__list">
+          <li class="product__card">
+            <div class="product__card--text">
+              <h3 class="product__title">
+                Получите полную картину финансов компании
+              </h3>
+              <p class="product__description">
+                Где заморожена прибыль? Богатеет ли компания со временем? Кому
+                принадлежит бизнес — вам или кредиторам? Насколько рационально
+                используются ресурсы?
+              </p>
+              <span class="product__about">Все ответы ждут вас в балансе.</span>
+            </div>
+            <picture class="product__picture">
+              <source
+                media="(min-width: 600px)"
+                with="558px"
+                height="540px"
+                srcset="./assets/card1.png 1x"
+                type="image/png" />
+              <img
+                class="product__card--image"
+                srcset="./assets/card1-mobile.png 1x"
+                width="345px"
+                height="377px"
+                alt="Financial report." />
+            </picture>
+          </li>
+          <li class="product__card">
+            <div class="product__card--text">
+              <h3 class="product__title">
+                Оперативно<br class="product__title--br" />
+                оценивайте<br class="product__title--br br" />
+                здоровье бизнеса
+              </h3>
+              <p class="product__description">
+                На основе отчета Adesk сам посчитает важные метрики
+                собственника: ROE, ликвидность, финансовую независимость и
+                эффективность бизнеса, как актива.
+              </p>
+              <span class="product__about"
+                >Остается только проанализировать показатели и скорректировать
+                стратегию развития компании.</span
+              >
+            </div>
+            <picture class="product__picture product__card--flex">
+              <source
+                media="(min-width: 600px)"
+                with="558px"
+                height="540px"
+                srcset="./assets/card2.png 1x"
+                type="image/png" />
+              <img
+                class="product__card--image"
+                srcset="./assets/card2-mobile.png 1x"
+                width="345px"
+                height="334px"
+                alt="Business health chart." />
+            </picture>
+          </li>
+          <li class="product__card product__card--uniq">
+            <div class="product__card--text">
+              <h3 class="product__title product__title--uniq">
+                Построить отчет поможет<br class="product__title--br br" />
+                мастер сборки<br class="product__title--br" />
+                баланса 🧙‍♂️
+              </h3>
+              <p class="product__description product__description--uniq">
+                Специальный робот вместе с вами пройдет все этапы сверки денег,
+                запасов, обязательств и капитала, чтобы активы точно сошлись с
+                пассивами.
+              </p>
+            </div>
+            <picture class="product__picture">
+              <video
+                src="./assets/balance_wizard.mp4"
+                class="product__video product__card--image"
+                width="345px"
+                height="303px"
+                type="video/mp4"
+                autoplay
+                loop></video>
+            </picture>
+          </li>
+        </ul>
+        <li class="product__card">
+          <div class="product__card--text">
+            <h3 class="product__title">
+              Соберите один раз, а дальше — мы сами
+            </h3>
+            <p class="product__description">
+              После первичной сборки отчета сервис будет сам обновлять его на
+              основании изменений данных в сервисе.
+            </p>
+            <span class="product__about"
+              >Отчет строится по принципу двойной записи, то есть каждое ваше
+              действие в Adesk автоматически отображается в активах и
+              пассивах.</span
+            >
+          </div>
+          <picture class="product__picture product__picture--last">
+            <source
+              media="(min-width: 600px)"
+              with="558px"
+              height="540px"
+              srcset="./assets/card4.png 1x"
+              type="image/png" />
+            <img
+              class="product__card--image"
+              srcset="./assets/card4-mobile.png 1x"
+              width="345px"
+              height="334px"
+              alt="Business health chart." />
+          </picture>
+        </li>
+      </section>
+      <section class="outro">
+        <h2 class="outro__title">
+          Узнайте, как ваш<br class="outro__br" />
+          бизнес распоряжается ресурсами
+        </h2>
+        <p class="outro__description">
+          Зарегистрируйтесь и получите 14 дней бесплатного доступа к балансовому
+          отчету и другим инструментам Adesk.
+        </p>
+        <button class="outro__btn" type="button">Начать учёт в Adesk</button>
+      </section>
+    </main>
+    <footer class="footer">
+      <ul class="footer__title-list">
+        <li class="footer__title-item">
+          <img
+            class="footer__title--logo"
+            src="./assets/footer -logo.svg"
+            alt="Adesk logo."
+            width="44px"
+            height="44px" />
+        </li>
+        <li class="footer__title-item">
+          <p class="footer__title">
+            Рассчитывайте<br />
+            на <b>Adesk</b>
+          </p>
+        </li>
+      </ul>
+      <nav class="footer__nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" onclick="return false" class="nav__link"
+              >Возможности
+              <button data-path="one" class="nav__btn" type="button"></button
+            ></a>
+
+            <ul data-target="one" class="nav__sub-list">
+              <li class="nav__sub-item">
+                <a href="#" onclick="return false" class="nav__sub-link"
+                  >Движение денежных средств</a
+                >
+              </li>
+              <li class="nav__sub-item">
+                <a href="#" onclick="return false" class="nav__sub-link"
+                  >Прибыль и убытки</a
+                >
+              </li>
+              <li class="nav__sub-item">
+                <a href="#" onclick="return false" class="nav__sub-link"
+                  >Баланс</a
+                >
+              </li>
+              <li class="nav__sub-item">
+                <a href="#" onclick="return false" class="nav__sub-link"
+                  >Учет обязательств</a
+                >
+              </li>
+              <li class="nav__sub-item">
+                <a href="#" onclick="return false" class="nav__sub-link"
+                  >Анализ расходов</a
+                >
+              </li>
+              <li class="nav__sub-item">
+                <a href="#" onclick="return false" class="nav__sub-link"
+                  >Платежный календарь</a
+                >
+              </li>
+              <li class="nav__sub-item">
+                <a href="#" onclick="return false" class="nav__sub-link"
+                  >Бюджетирование</a
+                >
+              </li>
+              <li class="nav__sub-item">
+                <a href="#" onclick="return false" class="nav__sub-link"
+                  >Согласование платежей</a
+                >
+              </li>
+              <li class="nav__sub-item">
+                <a href="#" onclick="return false" class="nav__sub-link"
+                  >Учет товаров и запасов</a
+                >
+              </li>
+              <li class="nav__sub-item">
+                <a href="#" onclick="return false" class="nav__sub-link"
+                  >Робот-помощник и AI</a
+                >
+              </li>
+              <li class="nav__sub-item">
+                <a href="#" onclick="return false" class="nav__sub-link"
+                  >Интеграции</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav__item nav__item--second-column">
+            <a href="#" onclick="return false" class="nav__link"
+              >Adesk для бизнеса
+              <button data-path="two" class="nav__btn" type="button"></button
+            ></a>
+
+            <ul data-target="two" class="nav__sub-list">
+              <li class="nav__sub-item">
+                <a href="#" onclick="return false" class="nav__sub-link"
+                  >Digital-агентства</a
+                >
+              </li>
+              <li class="nav__sub-item">
+                <a href="#" onclick="return false" class="nav__sub-link"
+                  >Маркетинговые агентства</a
+                >
+              </li>
+              <li class="nav__sub-item">
+                <a href="#" onclick="return false" class="nav__sub-link"
+                  >Стартапы</a
+                >
+              </li>
+              <li class="nav__sub-item">
+                <a href="#" onclick="return false" class="nav__sub-link"
+                  >Кафе и рестораны</a
+                >
+              </li>
+              <li class="nav__sub-item">
+                <a href="#" onclick="return false" class="nav__sub-link"
+                  >Строительные компании</a
+                >
+              </li>
+              <li class="nav__sub-item">
+                <a href="#" onclick="return false" class="nav__sub-link"
+                  >Юридические фирмы</a
+                >
+              </li>
+              <li class="nav__sub-item">
+                <a href="#" onclick="return false" class="nav__sub-link"
+                  >Фрилансеры</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav__item nav__item--third-column">
+            <a href="#" onclick="return false" class="nav__link"
+              >Ресурсы
+              <button data-path="three" class="nav__btn" type="button"></button
+            ></a>
+
+            <ul data-target="three" class="nav__sub-list">
+              <li class="nav__sub-item">
+                <a href="#" onclick="return false" class="nav__sub-link"
+                  >Журнал о финансах</a
+                >
+              </li>
+              <li class="nav__sub-item">
+                <a href="#" onclick="return false" class="nav__sub-link"
+                  >Базовый курс о финансах</a
+                >
+              </li>
+              <li class="nav__sub-item nav__sub-item--logo">
+                <a href="#" onclick="return false" class="nav__sub-link"
+                  >Расширенный курс по учету</a
+                >
+                <img
+                  class="nav__sub-item--logo"
+                  src="./assets/footer-link-logo.svg"
+                  alt="Link logo."
+                  width="18px"
+                  height="18px" />
+              </li>
+              <li class="nav__sub-item">
+                <a href="#" onclick="return false" class="nav__sub-link"
+                  >Шаблон финансовой модели</a
+                >
+              </li>
+              <li class="nav__sub-item">
+                <a href="#" onclick="return false" class="nav__sub-link"
+                  >Внедрение под ключ</a
+                >
+              </li>
+              <li class="nav__sub-item">
+                <a href="#" onclick="return false" class="nav__sub-link"
+                  >Партнерская программа</a
+                >
+              </li>
+              <li class="nav__sub-item">
+                <a href="#" onclick="return false" class="nav__sub-link"
+                  >Бонусы от партнеров</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a href="#" onclick="return false" class="nav__link"
+              >Информация
+              <button data-path="four" class="nav__btn" type="button"></button
+            ></a>
+            <ul data-target="four" class="nav__sub-list">
+              <li class="nav__sub-item">
+                <a href="#" onclick="return false" class="nav__sub-link"
+                  >Документация по API</a
+                >
+              </li>
+              <li class="nav__sub-item">
+                <a href="#" onclick="return false" class="nav__sub-link"
+                  >Отзывы пользователей</a
+                >
+              </li>
+              <li class="nav__item">
+                <a href="#" onclick="return false" class="nav__sub-link"
+                  >Помощь</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a href="#" onclick="return false" class="nav__link nav__link--uniq"
+              >Контакты
+              <button data-path="five" class="nav__btn" type="button"></button
+            ></a>
+            <ul data-target="five" class="nav__sub-list">
+              <li class="nav__sub-item">
+                <a href="#" onclick="return false" class="nav__sub-link"
+                  >support@adesk.ru</a
+                >
+              </li>
+              <li class="nav__sub-item">
+                <a
+                  href="#"
+                  onclick="return false"
+                  class="nav__sub-link nav__sub-link--number"
+                  >+7 (495) 106-21-00</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav__item nav__item--outro">
+            <a href="#" onclick="return false" class="nav__link"
+              >Предложения и сотрудничество:</a
+            >
+            <ul class="nav__sub-list">
+              <li class="nav__sub-item">
+                <a class="nav__sub-link" href="#" onclick="return false"
+                  >inbox@adesk.ru</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <ul class="footer__link-list">
+        <li class="footer__link-item">
+          <a href="#" onclick="return false" class="footer__link-mobile">
+            <img
+              class="footer__link--logo footer__link--logo-ios"
+              src="./assets/footer-appstore-logo.svg"
+              alt="App store logo."
+              width="20px"
+              height="20px" />
+            <span class="footer__link-mobile--text">App Store</span></a
+          >
+        </li>
+        <li class="footer__link-item">
+          <a href="#" onclick="return false" class="footer__link-mobile">
+            <img
+              class="footer__link--logo footer__link--logo-android"
+              src="./assets/footer-googleplay-logo.svg"
+              alt="App store logo."
+              width="20px"
+              height="20px" />
+            <span class="footer__link-mobile--text">Google Play</span></a
+          >
+        </li>
+      </ul>
+      <hr class="footer__decorative" />
+      <ul class="footer__social-list">
+        <li class="footer__social-item">
+          <a href="#" onclick="return false" class="footer__social-link">
+            <img
+              src="./assets/footer-social-telegram.svg"
+              alt="Telegram logo."
+              width="24px"
+              height="24px"
+          /></a>
+        </li>
+        <li class="footer__social-item">
+          <a href="#" onclick="return false" class="footer__social-link">
+            <img
+              src="./assets/footer-social-facebook.svg"
+              alt="Facebook logo."
+              width="24px"
+              height="24px"
+          /></a>
+        </li>
+        <li class="footer__social-item">
+          <a href="#" onclick="return false" class="footer__social-link">
+            <img
+              src="./assets/footer-social-vk.svg"
+              alt="Vk logo."
+              width="24px"
+              height="24px"
+          /></a>
+        </li>
+        <li class="footer__social-item">
+          <a href="#" onclick="return false" class="footer__social-link">
+            <img
+              src="./assets/footer-social-youtube.svg"
+              alt="Youtube logo."
+              width="24px"
+              height="24px"
+          /></a>
+        </li>
+        <li class="footer__social-item">
+          <a href="#" onclick="return false" class="footer__social-link">
+            <img
+              src="./assets/footer-social-instagram.svg"
+              alt="Instagram logo."
+              width="24px"
+              height="24px"
+          /></a>
+        </li>
+      </ul>
+      <ul class="footer__outro-list">
+        <li class="footer__outro-item">
+          <a href="#" onclick="return false" class="footer__outro--link-title"
+            >ООО «Адеск», 2022</a
+          >
+        </li>
+        <li class="footer__outro-item">
+          <a href="#" onclick="return false" class="footer__outro--link-text"
+            >Политика конфиденциальности</a
+          >
+        </li>
+        <li class="footer__outro-item">
+          <a href="#" onclick="return false" class="footer__outro--link-text"
+            >Договор-оферта</a
+          >
+        </li>
+      </ul>
+    </footer>
+  </body>
+  <script src="./script.js"></script>
+</html>
